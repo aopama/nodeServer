@@ -1,0 +1,43 @@
+<include file="Com:head" />
+<link rel="stylesheet" href="__PUBLIC__/css/list.css?v=1">
+<script src="__PUBLIC__/js/list.js?v=1"></script>
+<body>
+  <div class='list_warp wpn'>
+    <div class='nav'>
+    </div>
+    <div class='listcont'>
+        <ul class='cl'>
+          <volist name="data" id="vo">
+           <li>
+              <div class='top'>
+                <a href="{:U('/Home/Detail/index',array('zpid'=>$vo[zpid]))}" class='img'>
+                  <img  class="lazy" data-original="{$Think.config.view_replace_str.qiniu}{$vo.cover}" alt="">
+                </a>
+              </div>
+              <div class='bot'>
+                <p class='title'>{$vo.title}</p>
+                <div class='cl info'>
+                    <a href="{:U('/Home/User/index',array('id'=>$vo[userid]))}" class='head z'>
+                        <img src="{$Think.config.view_replace_str.qiniu}{$vo.headurl}" alt="">
+                    </a>
+                    <div class='name z'>
+                      {$vo.username}
+                    </div>
+                </div>
+              </div>
+            </li>
+          </volist>
+        </ul>
+        <div class="page cl">
+          {$page}
+        </div>
+    </div>
+    </div>
+<include file="Com:foot" />
+</body>
+
+<script type="text/javascript" charset="utf-8">
+  $(function() {
+      $("img.lazy").lazyload({effect: "fadeIn"});
+  });
+</script>

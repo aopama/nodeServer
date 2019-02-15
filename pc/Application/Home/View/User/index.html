@@ -1,0 +1,96 @@
+<include file="Com:head"/>
+<link rel="stylesheet" href="__PUBLIC__/css/user.css?v=2">
+  <div class="user_warp">
+    <div class="user_top">
+      <div class='user_bg'>
+        <!-- <img src="{$Think.config.view_replace_str.qiniu}{$udata[bgurl]}" alt=""> -->
+      </div>
+      <div class="user_portrait">
+        <a href="{:U('/Home/Set')}" title="" target="_blank">
+          <img src="{$Think.config.view_replace_str.qiniu}{$udata[headurl]}" alt="">
+        </a>
+      </div>
+      <div class="user_about">
+        <p>{$udata[name]}</p>
+        {$udata[exp]}
+      </div>
+    </div>
+    <!-- 主要内容 -->
+    <div class="user_main cl">
+      <div class="left fl">
+        <!-- 个人资料 -->
+        <div class="data">
+          <div class="active_num cl">
+            <span class="left fl">
+              32165个粉丝
+            </span>
+            <span class="right fl">
+              12个关注
+            </span>
+          </div>
+          <div class="user_area cl">
+            <i class="fl icon-ditu"></i>
+            <span class="fl">{$udata[address]}</span>
+          </div>
+          <div class="user_contact cl">
+            <i class="fl icon-xinfeng"></i>
+            <span class="fl">{$udata[email]}</span>
+          </div>
+          <div class="user_intro">
+            <p class="p1">简介：</p>
+            <p class="cont">
+              {$udata[sba]}
+            </p>
+          </div>
+        </div>
+        <!-- 留言 -->
+      </div>
+      <div class="right fl">
+        <div class="user_tab cl">
+          <ul>
+            <li class="on">
+              <a href="javascript:;" title="">作品({$count})</a>
+            </li>
+          </ul>
+          <if condition="!is_login()">
+          <div class="save fr">
+            <a class="cl" href="{:U('/Home/Upload/index')}">
+              <i class="icon-feiji fl"></i>
+              <span  class="fl">上传作品</span>
+            </a>
+          </div>
+          <else/></if>
+        </div>
+        <!-- user_tab END cont -->
+        <div class="user_cont">
+          <ul>
+            <li>
+              <div class="user_cont_works">
+                <ul class="cl">
+                   <volist name="list" id="data">
+                      <li>
+                        <a zpid='{$data.zpid}' href="{:U('/Home/Detail/index',array('zpid'=>$data[zpid]))}" title="{$data.title}">
+                          <img src="{$Think.config.view_replace_str.qiniu}{$data.cover}" alt="">
+                        </a>
+                         <p>{$data.title}</p>
+                      </li>
+                    </volist>
+                </ul>
+                  <div class="page cl">
+                    {$page}
+                  </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(function(){
+      $('.user_bg').css({"background":"#"+Math.floor(Math.random()*0xffffff).toString(16)});
+      $('.prev').addClass('fl').text('').html('<i class="icon-shangyiye"></i>');
+      $('.next').addClass('fr').text('').html('<i class="icon-xiayiye"></i>');
+    })
+  </script>
+  <include file="Com:foot"/>

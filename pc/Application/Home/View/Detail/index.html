@@ -1,0 +1,102 @@
+<include file="Com:head" />
+<link rel="stylesheet" href="__PUBLIC__/css/detail.css?v=112">
+<script src="__PUBLIC__/js/detail.js?v=11"></script>
+<div class='wpn dtwarp cl'>
+  <input type="hidden" class='zpid' value='{$data[0][zpid]}'>
+  <div class='works-main'>
+    <div class='works-top'>
+      <div class='title'>
+        {$data[0][title]}
+      </div>
+      <div class='det cl'>
+          <span class="tag">{$data[0][owner]}</span>
+          <span>分类：<em>{$data[0][type]}</em></span>
+      </div>
+       <div class='det cl'>
+        <span class='time'>
+          <i class="icon-time"></i>
+          <em>{$data[0][creattime]}</em>
+        </span>
+      </div>
+    </div>
+    <!-- 图文 -->
+    <div class='works-cont'>
+        <p>{$data[0][des]}</p>
+        <div class='imgcont'>
+            <volist name="imgurl" id="vo">
+              <p>
+                  <img src="{$Think.config.view_replace_str.qiniu}{$vo}" alt="">
+              </p>
+            </volist>
+        </div>
+    </div>
+      <!-- 评论 -->
+    <div class='comit cl' url='{$Think.config.view_replace_str.qiniu}'>
+      <div class='comedit'>
+         <if condition="is_login()">
+          <div class="nologin cl">
+            <div class='y'>
+              <a class='z' href="{:U('/Home/Reg')}">注册</a>
+              <a class='z login' href="{:U('/Home/Login')}">登录</a>
+            </div>
+          </div>
+           <else/>
+          <div class='txtarea'>
+             <textarea id='profile' class="com-area" name=""></textarea>
+             <p class="comment-warn">还可以输入<span id="com-num">501</span>个字</p>
+          </div>
+          <div class='btnwarp cl'>
+            <button class='pl btnpl y' rel='0'>评论</button>
+          </div>
+      </if>
+      </div>
+        <div class='comlist'>
+           <volist name="plist" id="datas">
+                  <li uname="{$datas.uname}" url='{$Think.config.view_replace_str.qiniu}'>
+                    <div class='cl'>
+                      <div class='left z'>
+                          <a href="{:U('/Home/User/index',array('id'=>$datas[pid]))}" class='head_'>
+                            <img src="{$Think.config.view_replace_str.qiniu}{$datas.headurl}" alt="">
+                          </a>
+                      </div>
+                      <div class='right z'>
+                          <p class="name"><a href=''>{$datas.uname}</a><span class='time'>{$datas.creattime}</span></p>
+                          <if condition="$datas.state  eq  1">
+                            <div class='retxt'>
+                              @{$datas.replyname}:{$datas.replycont}
+                            </div>
+                          </if>
+                          <p class='cont'>{$datas.cont}</p>
+                            <span class='reply replybtn' <if condition="is_login()">ref="1"</if>>回复</span>
+                          <div class="replycont">
+                            <div class='pos'>
+                              <textarea id='profile' class="reply-area" name=""></textarea>
+                              <p class="comment-warn">还可以输入<span id="com-num">501</span>个字</p>
+                            </div>
+                            <p>
+                              <div class="y">
+                                <button class="canl z">取消</button>
+                                <button class="pl btnpl z" rel="1">提交</button>
+                              </div>
+                            </p>
+                          </div>
+                      </div>
+                    </div>
+                </li>
+          </volist>
+        </div>
+    </div>
+  </div>
+  <!-- 右侧 -->
+  <div class='aside'>
+    <div class='wa_cont'>
+         <div class='zbd_portrait'>
+            <a href="{:U('/Home/User/index',array('id'=>$data[0][userid]))}">
+                <img src="{$Think.config.view_replace_str.qiniu}{$data[0][headurl]}" alt="">
+            </a>
+        </div>
+        <p class='uname'>{$data[0][username]}</p>
+    </div>
+  </div>
+</div>
+<include file="Com:foot" />

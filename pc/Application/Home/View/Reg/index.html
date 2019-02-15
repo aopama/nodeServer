@@ -1,0 +1,81 @@
+<include file="Com:head" />
+<link rel="stylesheet" href="__PUBLIC__/css/login.css?v=213">
+<script src="__PUBLIC__/js/login.js"></script>
+<div class='videobg'>
+    <div class='gridbg'></div>
+    <video loop="loop" autoplay='autoplay'>
+        <source src="__PUBLIC__/images/wild.webm" type="video/webm">
+        <source src="__PUBLIC__/images/wild.mp4" type="video/mp4">
+    </video>
+</div>
+ <div class="reg_warp content_login">
+    <div class="title cl">
+        <span class="z">注册</span>
+        <span class="y cl">
+            <em class="z">已有账号？</em>
+            <a class="z log" href="{:U('/Home/Login')}" title="">马上登录</a>
+        </span>
+    </div>
+    <form action="#" method="get" id="">
+        <p>
+            <input type="text" class='name' placeholder="用户名（4-20个字符）">
+        </p>
+        <p>
+            <input type="text" class="pwd" placeholder="设置密码">
+        </p>
+        <p>
+            <input type="text" class='pwds' placeholder="再次确认密码">
+        </p>
+        <p>
+            <input type="text" class='email' placeholder="请输入邮箱">
+        </p>
+       <p class="cl">
+            <input class='verify z' placeholder="验证码" type="text">
+            <img class="z" src="{:U('Reg/verify')}" alt="" height="34" id="verify" width="100" onClick="change_code();">
+        </p>
+       <!--  <p class="sip_wap cl">
+            <span class="z ok">
+                <i class="icon-ok"></i>
+            </span>
+            <input type="hidden" name="" value="">
+            <span class="sip z">
+                我已阅读并接受
+                <a href="javascript:;" title="">《版权声明》</a>
+                 和
+                 <a href="javascript:;" title="">《隐私保护》</a>
+            </span>
+        </p> -->
+        <p class='p1'></p>
+        <button class="btn reg submit" type="">马上注册</button>
+    </form>
+</div>
+<script>
+function change_code(){
+    document.getElementById('verify').src = "{:U('Reg/verify')}" + '?' + Math.random();
+}
+$(function() {
+    $(document).on('click', '.submit', function() {
+        $.ajax({
+            type: "post",
+            url: "http://localhost/pc/index.php/Home/Reg/reg",
+            data: {
+                verify:$('.verify').val(),
+                name:$('.name').val(),
+                pwd:$('.pwd').val(),
+                pwds:$('.pwds').val(),
+                email:$('.email').val()
+            },
+            dataType: "json",
+            success: function(result) {
+                $('.p1').text(result.msg)
+            },
+            error: function(result, a, b) {
+                $('.p1').text(result.msg)
+            }
+        });
+    })
+})
+</script>
+
+</body>
+</html>

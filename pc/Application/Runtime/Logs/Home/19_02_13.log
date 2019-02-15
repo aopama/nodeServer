@@ -1,0 +1,797 @@
+[ 2019-02-13T09:49:32+08:00 ] ::1 /pc/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001046s ]
+
+[ 2019-02-13T09:49:32+08:00 ] ::1 /pc/index.php/Home/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000235s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014209s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000941s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000973s ]
+
+[ 2019-02-13T09:50:05+08:00 ] ::1 /pc/index.php/Home/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008113s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008145s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000246s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000273s ]
+
+[ 2019-02-13T09:50:17+08:00 ] ::1 /pc/index.php/Home/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000262s ]
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.0197s ]
+SQL: SELECT * FROM `userinfo` WHERE ( name='z123456' or phone='z123456' or email='z123456' ) AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0035s ]
+
+[ 2019-02-13T09:50:17+08:00 ] ::1 /pc/index.php/Home/Sye
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000309s ]
+SQL: SHOW COLUMNS FROM `works` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `works` ORDER BY rand() LIMIT 9   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/6b4240dcf8c96f235e83b666523d3e2d.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007321s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007348s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000478s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2019-02-13T09:50:21+08:00 ] ::1 /pc/index.php/Home/Yh.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+SQL: SHOW COLUMNS FROM `works` [ RunTime:0.0054s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `works` WHERE `type` = '水墨油彩' LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `works` WHERE `type` = '水墨油彩' LIMIT 0,32   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/20122fc55f6c6e2fb8c88fa7e63e02a2.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009833s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009866s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000560s ]
+
+[ 2019-02-13T09:50:22+08:00 ] ::1 /pc/index.php/Home/Sy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000242s ]
+SQL: SHOW COLUMNS FROM `works` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `works` WHERE `type` = '摄影' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `works` WHERE `type` = '摄影' LIMIT 0,32   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000052s ]
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/59abac09ce75f2a9cc6c6aacb06e426c.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004850s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000133s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000315s ]
+
+[ 2019-02-13T09:50:23+08:00 ] ::1 /pc/index.php/Home/List.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000223s ]
+SQL: SHOW COLUMNS FROM `works` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `works` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `works` LIMIT 0,32   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/42fc7c8ee03e2fee3718917602a7ce2d.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005162s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005190s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000352s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000374s ]
+
+[ 2019-02-13T09:50:26+08:00 ] ::1 /pc/index.php/Home/Upload/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/3d7f4c0ce379939c2e6a1f694faf6825.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007495s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007522s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000333s ]
+
+[ 2019-02-13T09:50:46+08:00 ] ::1 /pc/index.php/Home/Upload/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000235s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Applications/XAMPP/xamppfiles/htdocs/pc/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: Expires /Applications/XAMPP/xamppfiles/htdocs/pc/ThinkPHP/Library/Think/Upload/Driver/Qiniu/QiniuStorage.class.php 第 45 行.
+NOTIC: [8] Undefined index: saveName /Applications/XAMPP/xamppfiles/htdocs/pc/ThinkPHP/Library/Think/Upload/Driver/Qiniu/QiniuStorage.class.php 第 80 行.
+NOTIC: [8] Undefined index: custom_fields /Applications/XAMPP/xamppfiles/htdocs/pc/ThinkPHP/Library/Think/Upload/Driver/Qiniu/QiniuStorage.class.php 第 83 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000719s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000788s ]
+
+[ 2019-02-13T09:50:47+08:00 ] ::1 /pc/index.php/Home/Upload/upload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000222s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /Applications/XAMPP/xamppfiles/htdocs/pc/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: Expires /Applications/XAMPP/xamppfiles/htdocs/pc/ThinkPHP/Library/Think/Upload/Driver/Qiniu/QiniuStorage.class.php 第 45 行.
+NOTIC: [8] Undefined index: saveName /Applications/XAMPP/xamppfiles/htdocs/pc/ThinkPHP/Library/Think/Upload/Driver/Qiniu/QiniuStorage.class.php 第 80 行.
+NOTIC: [8] Undefined index: custom_fields /Applications/XAMPP/xamppfiles/htdocs/pc/ThinkPHP/Library/Think/Upload/Driver/Qiniu/QiniuStorage.class.php 第 83 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000546s ]
+
+[ 2019-02-13T09:50:47+08:00 ] ::1 /pc/index.php/Home/Upload/works
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000241s ]
+SQL: SHOW COLUMNS FROM `works` [ RunTime:0.0015s ]
+SQL: INSERT INTO `works` (`userid`,`title`,`owner`,`type`,`headurl`,`des`,`cover`,`imgurl`,`creattime`) VALUES ('1','1','原创作品','水墨油彩','1.png','1','2019-02-13_5c6377f6487bf.jpg','2019-02-13_5c6377f6be05d.jpg','2019-02-13 09:50:47') [ RunTime:0.0034s ]
+
+[ 2019-02-13T09:50:51+08:00 ] ::1 /pc/index.php/Home/Upload/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/3d7f4c0ce379939c2e6a1f694faf6825.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000203s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000215s ]
+
+[ 2019-02-13T09:50:53+08:00 ] ::1 /pc/index.php/Home/Sye.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000223s ]
+SQL: SHOW COLUMNS FROM `works` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `works` ORDER BY rand() LIMIT 9   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/6b4240dcf8c96f235e83b666523d3e2d.php 第 56 行.
+NOTIC: [8] Use of undefined constant zpid - assumed 'zpid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/6b4240dcf8c96f235e83b666523d3e2d.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003834s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003851s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000256s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000270s ]
+
+[ 2019-02-13T09:50:56+08:00 ] ::1 /pc/index.php/Home/Yh.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+SQL: SHOW COLUMNS FROM `works` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `works` WHERE `type` = '水墨油彩' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `works` WHERE `type` = '水墨油彩' LIMIT 0,32   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/20122fc55f6c6e2fb8c88fa7e63e02a2.php 第 56 行.
+NOTIC: [8] Use of undefined constant zpid - assumed 'zpid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/20122fc55f6c6e2fb8c88fa7e63e02a2.php 第 83 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/20122fc55f6c6e2fb8c88fa7e63e02a2.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004352s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004367s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000274s ]
+
+[ 2019-02-13T09:50:58+08:00 ] ::1 /pc/index.php/Home/Sy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000222s ]
+SQL: SHOW COLUMNS FROM `works` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `works` WHERE `type` = '摄影' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `works` WHERE `type` = '摄影' LIMIT 0,32   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000054s ]
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/59abac09ce75f2a9cc6c6aacb06e426c.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004541s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000277s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000297s ]
+
+[ 2019-02-13T09:51:00+08:00 ] ::1 /pc/index.php/Home/List.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000192s ]
+SQL: SHOW COLUMNS FROM `works` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `works` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `works` LIMIT 0,32   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000051s ]
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/42fc7c8ee03e2fee3718917602a7ce2d.php 第 56 行.
+NOTIC: [8] Use of undefined constant zpid - assumed 'zpid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/42fc7c8ee03e2fee3718917602a7ce2d.php 第 83 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/42fc7c8ee03e2fee3718917602a7ce2d.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003425s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003441s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000236s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000251s ]
+
+[ 2019-02-13T09:51:01+08:00 ] ::1 /pc/index.php/Home/Detail/index/zpid/26.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+SQL: SHOW COLUMNS FROM `works` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `works` WHERE `zpid` = 26  [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant imgurl - assumed 'imgurl' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Home/Controller/DetailController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `comit` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `comit` WHERE `zpid` = 26 ORDER BY creattime desc  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/0d75cb75cd30b13fdd4834afd69acb19.php 第 56 行.
+NOTIC: [8] Use of undefined constant zpid - assumed 'zpid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/0d75cb75cd30b13fdd4834afd69acb19.php 第 76 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/0d75cb75cd30b13fdd4834afd69acb19.php 第 80 行.
+NOTIC: [8] Use of undefined constant owner - assumed 'owner' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/0d75cb75cd30b13fdd4834afd69acb19.php 第 83 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/0d75cb75cd30b13fdd4834afd69acb19.php 第 84 行.
+NOTIC: [8] Use of undefined constant creattime - assumed 'creattime' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/0d75cb75cd30b13fdd4834afd69acb19.php 第 89 行.
+NOTIC: [8] Use of undefined constant des - assumed 'des' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/0d75cb75cd30b13fdd4834afd69acb19.php 第 95 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/0d75cb75cd30b13fdd4834afd69acb19.php 第 157 行.
+NOTIC: [8] Use of undefined constant headurl - assumed 'headurl' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/0d75cb75cd30b13fdd4834afd69acb19.php 第 158 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/0d75cb75cd30b13fdd4834afd69acb19.php 第 161 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007106s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000357s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000374s ]
+
+[ 2019-02-13T09:51:06+08:00 ] ::1 /pc/index.php/Home/Upload/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000248s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/3d7f4c0ce379939c2e6a1f694faf6825.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004627s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004646s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000277s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000292s ]
+
+[ 2019-02-13T09:51:09+08:00 ] ::1 /pc/index.php/Home/Sy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000195s ]
+SQL: SHOW COLUMNS FROM `works` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `works` WHERE `type` = '摄影' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `works` WHERE `type` = '摄影' LIMIT 0,32   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/59abac09ce75f2a9cc6c6aacb06e426c.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004174s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004193s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000261s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000276s ]
+
+[ 2019-02-13T09:51:10+08:00 ] ::1 /pc/index.php/Home/Yh.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000286s ]
+SQL: SHOW COLUMNS FROM `works` [ RunTime:0.0176s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `works` WHERE `type` = '水墨油彩' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `works` WHERE `type` = '水墨油彩' LIMIT 0,32   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/20122fc55f6c6e2fb8c88fa7e63e02a2.php 第 56 行.
+NOTIC: [8] Use of undefined constant zpid - assumed 'zpid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/20122fc55f6c6e2fb8c88fa7e63e02a2.php 第 83 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/20122fc55f6c6e2fb8c88fa7e63e02a2.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005584s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000425s ]
+
+[ 2019-02-13T09:51:11+08:00 ] ::1 /pc/index.php/Home/Detail/index/zpid/26.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+SQL: SHOW COLUMNS FROM `works` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `works` WHERE `zpid` = 26  [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant imgurl - assumed 'imgurl' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Home/Controller/DetailController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `comit` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `comit` WHERE `zpid` = 26 ORDER BY creattime desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/0d75cb75cd30b13fdd4834afd69acb19.php 第 56 行.
+NOTIC: [8] Use of undefined constant zpid - assumed 'zpid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/0d75cb75cd30b13fdd4834afd69acb19.php 第 76 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/0d75cb75cd30b13fdd4834afd69acb19.php 第 80 行.
+NOTIC: [8] Use of undefined constant owner - assumed 'owner' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/0d75cb75cd30b13fdd4834afd69acb19.php 第 83 行.
+NOTIC: [8] Use of undefined constant type - assumed 'type' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/0d75cb75cd30b13fdd4834afd69acb19.php 第 84 行.
+NOTIC: [8] Use of undefined constant creattime - assumed 'creattime' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/0d75cb75cd30b13fdd4834afd69acb19.php 第 89 行.
+NOTIC: [8] Use of undefined constant des - assumed 'des' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/0d75cb75cd30b13fdd4834afd69acb19.php 第 95 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/0d75cb75cd30b13fdd4834afd69acb19.php 第 157 行.
+NOTIC: [8] Use of undefined constant headurl - assumed 'headurl' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/0d75cb75cd30b13fdd4834afd69acb19.php 第 158 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/0d75cb75cd30b13fdd4834afd69acb19.php 第 161 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005608s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000223s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000236s ]
+
+[ 2019-02-13T09:51:12+08:00 ] ::1 /pc/index.php/Home/Yh.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000211s ]
+SQL: SHOW COLUMNS FROM `works` [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `works` WHERE `type` = '水墨油彩' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `works` WHERE `type` = '水墨油彩' LIMIT 0,32   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000052s ]
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/20122fc55f6c6e2fb8c88fa7e63e02a2.php 第 56 行.
+NOTIC: [8] Use of undefined constant zpid - assumed 'zpid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/20122fc55f6c6e2fb8c88fa7e63e02a2.php 第 83 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/20122fc55f6c6e2fb8c88fa7e63e02a2.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003623s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003641s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000277s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000293s ]
+
+[ 2019-02-13T09:51:27+08:00 ] ::1 /pc/index.php/Home/Upload/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000237s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000049s ]
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/3d7f4c0ce379939c2e6a1f694faf6825.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004853s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000334s ]
+
+[ 2019-02-13T09:51:36+08:00 ] ::1 /pc/index.php/Home/Sye.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000267s ]
+SQL: SHOW COLUMNS FROM `works` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `works` ORDER BY rand() LIMIT 9   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/6b4240dcf8c96f235e83b666523d3e2d.php 第 56 行.
+NOTIC: [8] Use of undefined constant zpid - assumed 'zpid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/6b4240dcf8c96f235e83b666523d3e2d.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000266s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000281s ]
+
+[ 2019-02-13T09:51:37+08:00 ] ::1 /pc/index.php/Home/Yh.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000215s ]
+SQL: SHOW COLUMNS FROM `works` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `works` WHERE `type` = '水墨油彩' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `works` WHERE `type` = '水墨油彩' LIMIT 0,32   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000050s ]
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/20122fc55f6c6e2fb8c88fa7e63e02a2.php 第 56 行.
+NOTIC: [8] Use of undefined constant zpid - assumed 'zpid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/20122fc55f6c6e2fb8c88fa7e63e02a2.php 第 83 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/20122fc55f6c6e2fb8c88fa7e63e02a2.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003699s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003715s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000255s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000269s ]
+
+[ 2019-02-13T09:51:39+08:00 ] ::1 /pc/index.php/Home/Sy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000223s ]
+SQL: SHOW COLUMNS FROM `works` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `works` WHERE `type` = '摄影' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `works` WHERE `type` = '摄影' LIMIT 0,32   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000045s ]
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/59abac09ce75f2a9cc6c6aacb06e426c.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003255s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003270s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000221s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000233s ]
+
+[ 2019-02-13T09:51:40+08:00 ] ::1 /pc/index.php/Home/Yh.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000238s ]
+SQL: SHOW COLUMNS FROM `works` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `works` WHERE `type` = '水墨油彩' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `works` WHERE `type` = '水墨油彩' LIMIT 0,32   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000045s ]
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/20122fc55f6c6e2fb8c88fa7e63e02a2.php 第 56 行.
+NOTIC: [8] Use of undefined constant zpid - assumed 'zpid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/20122fc55f6c6e2fb8c88fa7e63e02a2.php 第 83 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/20122fc55f6c6e2fb8c88fa7e63e02a2.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003215s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003229s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000220s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000232s ]
+
+[ 2019-02-13T09:51:41+08:00 ] ::1 /pc/index.php/Home/Sye.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000202s ]
+SQL: SHOW COLUMNS FROM `works` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `works` ORDER BY rand() LIMIT 9   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/6b4240dcf8c96f235e83b666523d3e2d.php 第 56 行.
+NOTIC: [8] Use of undefined constant zpid - assumed 'zpid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/6b4240dcf8c96f235e83b666523d3e2d.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003369s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003391s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000213s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000225s ]
+
+[ 2019-02-13T09:51:41+08:00 ] ::1 /pc/index.php/Home/Yh.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000195s ]
+SQL: SHOW COLUMNS FROM `works` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `works` WHERE `type` = '水墨油彩' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `works` WHERE `type` = '水墨油彩' LIMIT 0,32   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/20122fc55f6c6e2fb8c88fa7e63e02a2.php 第 56 行.
+NOTIC: [8] Use of undefined constant zpid - assumed 'zpid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/20122fc55f6c6e2fb8c88fa7e63e02a2.php 第 83 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/20122fc55f6c6e2fb8c88fa7e63e02a2.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004334s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004351s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000348s ]
+
+[ 2019-02-13T09:51:42+08:00 ] ::1 /pc/index.php/Home/Sy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000223s ]
+SQL: SHOW COLUMNS FROM `works` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `works` WHERE `type` = '摄影' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `works` WHERE `type` = '摄影' LIMIT 0,32   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/59abac09ce75f2a9cc6c6aacb06e426c.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005035s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000163s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000649s ]
+
+[ 2019-02-13T09:51:42+08:00 ] ::1 /pc/index.php/Home/Yh.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+SQL: SHOW COLUMNS FROM `works` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `works` WHERE `type` = '水墨油彩' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `works` WHERE `type` = '水墨油彩' LIMIT 0,32   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000049s ]
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/20122fc55f6c6e2fb8c88fa7e63e02a2.php 第 56 行.
+NOTIC: [8] Use of undefined constant zpid - assumed 'zpid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/20122fc55f6c6e2fb8c88fa7e63e02a2.php 第 83 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/20122fc55f6c6e2fb8c88fa7e63e02a2.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003362s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003378s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000350s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000371s ]
+
+[ 2019-02-13T09:51:42+08:00 ] ::1 /pc/index.php/Home/Sye.html?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000222s ]
+SQL: SHOW COLUMNS FROM `works` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `works` ORDER BY rand() LIMIT 9   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/6b4240dcf8c96f235e83b666523d3e2d.php 第 56 行.
+NOTIC: [8] Use of undefined constant zpid - assumed 'zpid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/6b4240dcf8c96f235e83b666523d3e2d.php 第 112 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004295s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004322s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000326s ]
+
+[ 2019-02-13T09:51:49+08:00 ] ::1 /pc/index.php/Home/Sy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000225s ]
+SQL: SHOW COLUMNS FROM `works` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `works` WHERE `type` = '摄影' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `works` WHERE `type` = '摄影' LIMIT 0,32   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/59abac09ce75f2a9cc6c6aacb06e426c.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005468s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005485s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000349s ]
+
+[ 2019-02-13T09:51:50+08:00 ] ::1 /pc/index.php/Home/List.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000164s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000224s ]
+SQL: SHOW COLUMNS FROM `works` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `works` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `works` LIMIT 0,32   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000052s ]
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/42fc7c8ee03e2fee3718917602a7ce2d.php 第 56 行.
+NOTIC: [8] Use of undefined constant zpid - assumed 'zpid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/42fc7c8ee03e2fee3718917602a7ce2d.php 第 83 行.
+NOTIC: [8] Use of undefined constant userid - assumed 'userid' /Applications/XAMPP/xamppfiles/htdocs/pc/Application/Runtime/Cache/Home/42fc7c8ee03e2fee3718917602a7ce2d.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004031s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004053s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000323s ]
+

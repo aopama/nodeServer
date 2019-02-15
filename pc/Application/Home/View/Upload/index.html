@@ -1,0 +1,105 @@
+<include file="Com:head" />
+<link rel="stylesheet" href="__PUBLIC__/css/up.css?v=12">
+<link rel="stylesheet" href="__PUBLIC__/css/ups.css?v=121211">
+<script src="__PUBLIC__/js/ajaxfileupload.js?v=101"></script>
+<div class="nav_bg"></div>
+<!-- 内容 -->
+<div class="main_warp">
+    <div class="main">
+        <div class="title cl">
+            <div class="p1 z">
+                作品标题
+            </div>
+            <div class="z">
+                <input class="inp" type="text" name="" value="" placeholder="25字以内">
+            </div>
+        </div>
+        <div class="title cl">
+            <div class="p1 z">
+                所有者
+            </div>
+            <div class="z select">
+                <div class="sele">
+                    <span class='txt owner' rel='0'>原创作品</span>
+                    <i class="arrow"></i>
+                    <ul class="sel_option">
+                        <li rel='0'>原创作品</li>
+                        <li rel='1'>署名作品</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="title cl">
+            <div class="p1 z">
+                类型
+            </div>
+            <div class="z select">
+                <div class="sele">
+                    <span class='txt type' rel='0'>水墨油彩</span>
+                    <i class="arrow"></i>
+                    <ul class="sel_option">
+                        <li rel='0'>水墨油彩</li>
+                        <li rel='1'>摄影</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="title cl">
+            <div class="p1 z">
+                描述
+            </div>
+            <div class="z txta">
+                <textarea placeholder="可以说明作品的创作背景、设计思路、团队成员等等有助于网友们进一步了解与探讨" name="profile" id="profile"></textarea>
+                <p>还可以输入
+                    <em>500</em>个字符</p>
+            </div>
+        </div>
+        <!-- 封面 -->
+        <div class="title cl">
+            <div class="p1 z">
+                上传封面
+            </div>
+            <div class="z">
+                <div class="fmup">
+                    <div class='close hide'>
+                        <i class='icon-close'></i>
+                    </div>
+                    <div class='up'>
+                        <i class='icon-add-bold'></i>
+                    </div>
+                    <input type="file" id="file" name="file" accept="image/*">
+                </div>
+            </div>
+        </div>
+        <!-- 作品 -->
+        <div class="title cl">
+            <div class="p1 z">
+                上传作品
+            </div>
+            <div class="z">
+                <div class="page-container">
+                    <div id="uploader" class="wu-example">
+                        <div class="queueList">
+                            <div id="dndArea" class="placeholder">
+                                <div id="filePicker"></div>
+                            </div>
+                        </div>
+                        <div class="statusBar" style="display:none">
+                            <div class="info"></div>
+                            <div class="btns">
+                                <div id="filePicker2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fabu cl">
+            <button class="fabusave btn">发布</button>
+        </div>
+    </div>
+</div>
+<script src="__PUBLIC__/js/up.js?v=104"></script>
+<script src="__PUBLIC__/js/webuploader.min.js"></script>
+<script src="__PUBLIC__/js/extend-webuploader.js?v=132"></script>
+<include file="Com:foot" />

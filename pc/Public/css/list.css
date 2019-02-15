@@ -1,0 +1,48 @@
+html{min-height:100%;}
+body{min-height:100%;}
+.list_warp{}
+.listcont{margin-top: 20px;}
+.listcont ul li{float: left;width:280px;padding:15px;}
+.listcont ul li:hover{background:#fff;box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);transition:all .8s;}
+.listcont ul li .top .img{width:280px;height:210px;overflow:hidden;display: inline-block;}
+.listcont ul li .top img{width:280px;height:210px;}
+.listcont ul li .top img {-webkit-transform: scale(1);
+-moz-transform: scale(1);
+-ms-transform: scale(1);
+transform: scale(1);
+-webkit-transition: -webkit-transform 0.2s;
+-moz-transition: -moz-transform 0.2s;
+-ms-transition: -moz-transform 0.2s
+transition: transform 0.2s;
+}
+.listcont ul li:hover .top img {
+-webkit-transform: scale(1.05);
+-moz-transform: scale(1.05);
+-ms-transform: scale(1.05);
+transform: scale(1.05);}
+
+.listcont ul li .bot .title{max-width: 217px;font-size:14px;color:#34495e;font-weight: bold;margin-top:5px;}
+.listcont ul li .bot .info{margin-top:5px;}
+.listcont ul li .bot .info .name{font-size:12px;color:#333;}
+.listcont ul li .bot .head{width:22px;height:22px;margin-right:15px;overflow:hidden;border-radius:50%;}
+.listcont ul li .bot .head img{width:100%;height:100%;}
+
+.listcont .page{text-align: center;margin-top:20px;}
+.listcont .page>div{display: inline-block;margin-left:-0px;}
+.listcont .page a,.listcont .page span{display: inline-block;float:left;padding:5px 15px;cursor:pointer; background:none;border:1px solid #fff;text-align: center;margin-right:10px;}
+.listcont .page span{background:#ff6633;color:#fff;border:1px solid #ff6633;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

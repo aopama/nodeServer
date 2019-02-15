@@ -1,0 +1,110 @@
+<include file="Com:head" />
+    <!-- 轮播 -->
+    <link rel="stylesheet" href="__PUBLIC__/css/public/banner/pogo-slider.min.css">
+    <script src="__PUBLIC__/js/banner/jquery.pogo-slider.min.js"></script>
+    <script>
+    $(function() {
+        $('#dowebok').pogoSlider({
+            slideTransition: 'fade', //淡入淡出效果
+            generateButtons: true, //显示左右控制箭头
+            displayProgess: true, //显示进度条
+            autoplayTimeout: 4000, //幻灯片自动播放时的间隔
+            autoplay: true, //幻灯片自动播放
+            generateNav: true, //显示圆点导航
+            responsive: false, //响应式
+            pauseOnHover: true, //鼠标悬停暂停
+            targetWidth: 1180, //指定幻灯片的宽度
+            targetHeight: 470, //指定幻灯片的高度
+            preserveTargetSize: false, //保持幻灯片大小比例
+            slideTransitionDuration: 1000, //幻灯片过度效果持续时间
+        });
+    });
+    </script>
+    <div class="warp">
+        <!--  轮播 -->
+        <div class="banner">
+            <div class="dowebok">
+                <div class="pogoSlider" id="dowebok">
+                    <div class="pogoSlider-slide" data-transition="fade" style="background-image:url(__PUBLIC__/images/banner/banner0.png);"></div>
+                    <div class="pogoSlider-slide" data-transition="fade" style="background-image:url(__PUBLIC__/images/banner/banner1.png);"></div>
+                    <div class="pogoSlider-slide" data-transition="fade" style="background-image:url(__PUBLIC__/images/banner/banner2.png);"></div>
+                    <div class="pogoSlider-slide" data-transition="fade" style="background-image:url(__PUBLIC__/images/banner/banner3.png);"></div>
+                    <div class="pogoSlider-slide" data-transition="fade" style="background-image:url(__PUBLIC__/images/banner/banner1.png);"></div>
+                </div>
+            </div>
+        </div>
+        <div class="main_index">
+            <div class="wpn cl">
+                <div class="list">
+                    <ul class="cl">
+                    <volist name="data" id="vo">
+                        <li>
+                            <a href="{:U('/Home/Detail/index',array('zpid'=>$vo[zpid]))}" title="">
+                                <img src="{$Think.config.view_replace_str.qiniu}{$vo.cover}" alt="">
+                            </a>
+                        </li>
+                    </volist>
+                    </ul>
+                </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wpn">
+            <ul class="cl">
+                <li class="fl">
+                    <ul >
+                        <li class="title on">
+                            ABOUT
+                        </li>
+                        <li>
+                            MYfineart作为XX爱好者的交流平台，所有
+                            作品版权归作者所有.
+                        </li>
+                    </ul>
+                </li>
+                <li class="fl on">
+                    <ul>
+                        <li class="title">
+                            友情链接
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="">
+                                中国美术网
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="">
+                                美术网
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="">
+                                艺术中国
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="fr">
+                    <ul>
+                        <li class="title">
+                            联系我们
+                        </li>
+                        <li class="cl">
+                            <i class="fl icon-xinfeng"></i>
+                            <span class="fl">325862578@qq.com</span>
+                        </li>
+                        <li class="cl">
+                            <i class="fl icon-qq"></i>
+                            <span class="fl">325862578</span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</body>
+</html>

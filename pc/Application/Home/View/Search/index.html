@@ -1,0 +1,51 @@
+<include file="Com:head" />
+<link rel="stylesheet" href="__PUBLIC__/css/list.css?v=1">
+<link rel="stylesheet" href="__PUBLIC__/css/search.css?v=1">
+ <div class='s_top'>
+      <form action="/pc/index.php/Home/Search/index.html" method="get">
+        <div class='fkbx'>
+          <input id='key' name='keys' type="text" placeholder='作品标题、作者、作品类型'>
+          <button class='search_btn' type='submit'>搜索</button>
+        </div>
+      </form>
+    </div>
+<div class='search_main wpn'>
+    <div class='cont listcont'>
+        <ul class="cl">
+            <if condition="$data eq 1">
+                <p>无符合条件内容</p>
+              <else />
+              <volist name="data" id="vo">
+               <li>
+                  <div class='top'>
+                    <a href="{:U('/Home/Detail/index',array('zpid'=>$vo[zpid]))}" class='img'>
+                      <img  class="lazy" data-original="{$Think.config.view_replace_str.qiniu}{$vo.cover}" alt="">
+                    </a>
+                  </div>
+                  <div class='bot'>
+                    <p class='title'>{$vo.title}</p>
+                    <div class='cl info'>
+                        <a href="{:U('/Home/User/index',array('id'=>$vo[userid]))}" class='head z'>
+                            <img src="{$Think.config.view_replace_str.qiniu}{$vo.headurl}" alt="">
+                        </a>
+                        <div class='name z'>
+                          {$vo.username}
+                        </div>
+                    </div>
+                  </div>
+                </li>
+              </volist>
+            </if>
+        </ul>
+        <div class="page cl">
+          {$page}
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" charset="utf-8">
+  $(function() {
+      $("img.lazy").lazyload({effect: "fadeIn"});
+  });
+</script>
+<include file="Com:foot" />

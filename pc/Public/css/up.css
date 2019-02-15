@@ -1,0 +1,28 @@
+body{ background-color: #f7f7f7; }
+.arrow { position: absolute; top: 50%; margin-top: -4px; right: 15px; border-style: solid; border-color: #999999 transparent transparent transparent; border-width: 9px 6px 0 6px; width: 0; height: 0; }
+.nav_bg{ min-width: 1180px; margin: 0 auto; height:348px; background: url(../images/bg.jpg) no-repeat center center; }
+.main_warp .main{ width: 1180px; height:auto; margin: 0 auto; margin-top: -100px; border-radius: 3px; background-color: #fff; padding-top:40px; box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);}
+.main_warp .main .title{ margin-bottom: 40px;padding:0 50px;}
+.main_warp .main .p1{ font-size: 14px; color: #666666; font-weight: bold; line-height: 44px; width: 68px; margin-right: 20px; }
+.main_warp .main .inp{ width: 431px; height: 44px; border: 1px solid #d5d5d5; line-height: 44px; color: #666; font-size: 14px; padding-left: 23px; }
+.main_warp .main .title{ margin-bottom: 40px; }
+.main_warp .main .title .select .sele{ position: relative; cursor:pointer; width: 178px; height: 44px; line-height: 44px; font-size: 14px; color: #666666; border: 1px solid #d5d5d5; }
+.main_warp .main .title .select .sele>span{ padding-left: 25px; }
+.main_warp .main .title .select ul{ display: none; width: 100%; position: absolute; top: 44px; left: -1px; overflow-y: auto; z-index: 1; box-shadow: 0 3px 15px #dee1e3; max-height: 255px; border: 1px solid #d5d5d5; border-top: none; }
+.main_warp .main .title .select ul li { display: block; padding: 10px 25px; font-size: 14px; line-height: 1.5; color: #666; border-top: 1px solid #bdc3c7; background-color: #fff; }
+.main_warp .main .title .txta textarea{ font-family:"Microsoft Yahei"; width: 890px; height:170px; border: 1px solid #d5d5d5; padding:15px; font-size: 14px; color:#666;}
+.main_warp .main .title .txta p { color: #b8c5ce; font-size: 14px;}
+.main_warp .main .title .txta p em{ width: 40px; text-align: center; display: inline-block;font-size: 18px; color: #f39c13; }
+.main_warp .main .title .txta p em{}
+
+.fmup{width:400px;height:300px;border:1px dashed #eee;position: relative;}
+.fmup #file{position:absolute;top:0;left:0;width:400px;height:300px;z-index:1;cursor:pointer;opacity:0;}
+.fmup img{width:100%;height:100%;}
+.fmup .close{opacity:0; transition:all .2s; width:400px;height:300px;position: absolute;top:0;left:0; z-index:2;background:rgba(119,0,36,0.4);cursor: pointer;}
+.fmup .close:hover{opacity:1;transition:all .2s;}
+.fmup i.icon-close{font-size:65px;position: absolute;top:50%;left:50%;margin-left:-35px;margin-top:-35px;color:#fff;}
+.fmup .up{transition:all .2s;width:400px;height:300px;position: relative;cursor: pointer;}
+.fmup .up i{font-size:65px;position:absolute;top:50%;left:50%;margin-left:-35px;margin-top:-35px;color:#30a9b2;}
+
+.fabu{width:100%;height:102px;line-height:102px;background:#f5f5f5;}
+.fabu .fabusave{width:175px;height:50px;line-height:50px;border-radius:50px;color:#fff;background:#ffa922;font-size:24px;font-size:bold;padding:0;float: right;margin-right:50px;margin-top:25px;}
